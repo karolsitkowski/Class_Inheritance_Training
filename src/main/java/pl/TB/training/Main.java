@@ -1,4 +1,4 @@
-package tb_training;
+package pl.TB.training;
 
 /**
  * Created by sit0 on 25.05.17.
