@@ -19,16 +19,6 @@ class Vehicle {
         this.speed = speed;
     }
 
-
-    protected void steerLeft(){
-        System.out.println("Skręcam w lewo");
-    }
-
-    protected void steerRight(){
-        System.out.println("Skręcam w prawo");
-    }
-
-
     protected void slowDown(int slowSpeed){
         System.out.println("Zwalniam o: " + slowSpeed);
         speed = speed - slowSpeed;
@@ -54,10 +44,46 @@ class Vehicle {
     }
 
     protected void checkEngine(){
-        if (engine == true)
-            System.out.println("Silnik pracuje");
-        if (engine == false)
+        if (engine)
+            System.out.println("Silnik już pracuje");
+        if (!engine){
             System.out.println("Silnik nie pracuje");
+        }
+
+    }
+
+    protected void run(){
+        System.out.println("!Run from Vehicle");
+        if (!wheels) {
+                System.out.println("Twój samochód nie ma kół, nie pojedzie!");
+                System.exit(0);
+            }
+        if (!steeringWheel) {
+                System.out.println("Twój samochód nie ma kierownicy, nie pojedzie!");
+                System.exit(0);
+        }
+        checkEngine();
+        if (!engine)
+            startEngine();
+        checkSpeed();
+
+        if(speed != 0){
+            System.out.println("Ustawiam speed na 0");
+            speed = 0;
+            checkSpeed();
+        }
+
+        speedUp(4);
+        checkSpeed();
+        speedUp(7);
+        checkSpeed();
+        slowDown(11);
+        checkSpeed();
+
+        if (engine)
+            stopEngine();
+
+        checkEngine();
     }
 
 
