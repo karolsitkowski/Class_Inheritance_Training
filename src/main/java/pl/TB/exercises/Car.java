@@ -9,14 +9,14 @@ class Car extends Vehicle {
     protected String transmission;
 
     public Car(String model, String transmission) {
-        super(true, true, true, true,0);
+        super(true, true, true, true,0,0);
         this.model = model;
         this.transmission = transmission;
 
     }
 
-    public Car(boolean steeringWheel, boolean engine, boolean breaks, boolean wheels, int speed, String model, String transmission) {
-        super(steeringWheel, engine, breaks, wheels, speed);
+    public Car(boolean steeringWheel, boolean engine, boolean breaks, boolean wheels, int speed, int gear, String model, String transmission) {
+        super(steeringWheel, engine, breaks, wheels, speed, gear);
         this.model = model;
         this.transmission = transmission;
         System.out.println("Car z innym konstruktorem");

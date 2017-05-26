@@ -13,8 +13,8 @@ class Cabriolet extends Car {
         this.roof = roof;
     }
 
-    public Cabriolet(boolean steeringWheel, boolean engine, boolean breaks, boolean wheels, int speed, String model, String transmission, int lookRating, boolean roof) {
-        super(steeringWheel, engine, breaks, wheels, speed, model, transmission);
+    public Cabriolet(boolean steeringWheel, boolean engine, boolean breaks, boolean wheels, int speed, int gear, String model, String transmission, int lookRating, boolean roof) {
+        super(steeringWheel, engine, breaks, wheels, speed, gear, model, transmission);
         this.lookRating = lookRating;
         this.roof = roof;
         System.out.println("Cabriolet z innym konstruktorem");
