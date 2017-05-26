@@ -1,4 +1,4 @@
-package pl.TB.exercises;
+package pl.TB.Inheritance.exercises;
 
 /**
  * Created by sit0 on 25.05.17.

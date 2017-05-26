@@ -1,4 +1,4 @@
-package pl.TB.training;
+package pl.TB.Inheritance.training;
 
 /**
  * Created by sit0 on 25.05.17.
