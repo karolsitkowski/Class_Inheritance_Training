@@ -14,7 +14,7 @@ public class Main {
         roomClock.clockPrice.print();
         System.out.println(roomClock.clockPrice.price());
 
-        
+
 
 
 
