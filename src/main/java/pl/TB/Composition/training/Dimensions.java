@@ -26,4 +26,8 @@ public class Dimensions {
     public int getDepth() {
         return depth;
     }
+
+    public void print(){
+        System.out.println("Szerolość: " + width + ".Wyskość: " + height + ".Głębokość: " + depth);
+    }
 }
