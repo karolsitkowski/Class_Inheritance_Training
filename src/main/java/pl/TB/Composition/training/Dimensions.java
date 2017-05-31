@@ -15,7 +15,7 @@ public class Dimensions {
         this.depth = depth;
     }
 
-    public int getWidth() {
+    int getWidth() {
         return width;
     }
 
